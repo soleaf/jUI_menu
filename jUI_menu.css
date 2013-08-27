@@ -1,0 +1,72 @@
+/* 메뉴레이어 */
+.jUI_memu_layer{
+	display: none;
+	background-color: #FFFFFF;
+	position: absolute;
+	z-index: 100;
+	border: 2px solid #6A679A;
+	cursor:pointer;
+	
+-moz-box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
+-webkit-box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
+box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
+
+
+}
+
+.jUI_memu_layer LI{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom:1px solid #D9D9D9;
+	position:relative;
+	cursor:pointer;
+}
+
+.jUI_memu_layer LI:last-of-type
+{
+	border-bottom:none;
+}
+
+.jUI_memu_layer LI:HOVER{
+	color: #FFFFFF;
+	background-color: #6A679A;
+}
+
+.jUI_memu_layer LI:ACTIVE{
+	color: #6A679A;
+	background-color: #ebebeb;
+}
+
+.jUI_menu{
+	display: inline-block;
+	border: 2px solid #6A679A;
+	position:relative;
+}
+
+.jUI_menu .label
+{
+	display: inline-block;
+	min-width:60px;
+	height:26px;
+	margin-left:10px;
+	margin-right:26px; /*arrow 공간확보*/
+	color: #000000;
+	line-height:26px;
+	float:left;
+	cursor:pointer;
+	overflow:hidden;
+}
+
+.jUI_menu .arrow{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url(/front/img/jUI_combo_arrow.png) no-repeat;
+	text-indent:-10000px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	cursor:pointer;
+}
