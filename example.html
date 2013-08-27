@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<title>soleaf</title>
+	<link rel="stylesheet" href="css/org.mintcode.jUI_menu.css" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/org.mintcode.jUI_menu.js" type="text/javascript"></script>
+	<style>
+	UL{
+		padding-left:0px;
+	}
+	*{
+		font-size:12px;
+		list-style: none;
+	}
+	</style>
+</head>
+<body>
+
+
+	<a href="#" class="jUI_menu" data-id="one" data-selectedValue="11" data-width="170">
+			<span class="label"></span>
+			<span class="arrow"></span>
+	</a>
+
+	<a href="#" class="jUI_menu" data-id="two" data-selectedValue="S200" data-width="180">
+			<span class="label"></span>
+			<span class="arrow"></span>
+	</a>
+	
+	<!-- jUI menuList: BEGIN -->
+		<ul class="jUI_memu_layer" data-role="root" data-id="one" data-root="one">
+			<li data-value="">ALL</li>
+			<li data-value="11">1</li>
+			<li data-value="S100" data-sub="sub1">11</li>
+			<li data-value="S200" data-sub="sub2">222</li>
+		</ul>
+
+		<ul class="jUI_memu_layer" data-role="sub" data-id="sub1" data-root="one">																<li data-value="3">A123LL</li>
+			<li data-value="31">1</li>
+		</ul>
+		
+		<ul class="jUI_memu_layer" data-role="sub" data-id="sub2" data-root="one">
+			<li data-value="3">A123LL</li>
+			<li data-value="31">1</li>
+		</ul>
+		
+		<ul class="jUI_memu_layer" data-role="root" data-id="two" data-root="two">
+			<li data-value="">ALL</li>
+			<li data-value="11">1</li>
+			<li data-value="S100">11</li>
+			<li data-value="S200">222</li>
+		</ul>
+	<!-- jUI menuList: End -->
+		
+</body>
+</html>

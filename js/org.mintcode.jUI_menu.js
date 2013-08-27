@@ -1,9 +1,10 @@
 /*
-
 jQuery UI set: Dropdown menu
-VER 1.0
-Ahn il ho
+VER 0.0.1
 
+by soleaf
+http://www.mintcode.org
+GitHub : https://github.com/soleaf/jUI_menu
 */
 
 $(document).ready(function(){
@@ -43,7 +44,7 @@ $(document).ready(function(){
 			var isHaveSub = $(this).attr("data-sub");
 			if (isHaveSub != null){
 				var thisText = $(this).text();
-				var arrowMark = " <font color='#dbdbdb' style='position:absolute;right:2px;' size='9'>►</font>";
+				var arrowMark = " <font color='#dbdbdb' style='position:absolute;right:2px;' size='9'>&gt; &nbsp;</font>";
 				$(this).css("padding-right","5px");
 				$(this).html(thisText + arrowMark);
 			}
@@ -104,7 +105,7 @@ function jUI_menu_click(senderSelector, data_root){
 		isCallSubMenu = false;
 	}
 	else{
-		$(".jUI_memu_layer[data-role=sub]").fadeOut(200);
+		$(".jUI_memu_layer[data-role=sub]").fadeOut(150);
 		isCallSubMenu = true;
 	}
 	

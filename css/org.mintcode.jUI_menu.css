@@ -1,3 +1,12 @@
+/*
+jQuery UI set: Dropdown menu
+VER 0.0.1
+
+by soleaf
+http://www.mintcode.org
+GitHub : https://github.com/soleaf/jUI_menu
+*/
+
 /* 메뉴레이어 */
 .jUI_memu_layer{
 	display: none;
@@ -63,7 +72,7 @@ box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
 	display: inline-block;
 	width: 26px;
 	height: 26px;
-	background: url(/front/img/jUI_combo_arrow.png) no-repeat;
+	background: url(org.mintcode.jUI_menu.png) no-repeat;
 	text-indent:-10000px;
 	position:absolute;
 	top:0px;
