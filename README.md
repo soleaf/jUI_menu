@@ -15,7 +15,7 @@ Therefore You can use this component to form on your site. Or Use navigating wit
 
 ##HOW TO USE
 
-1. Write this menu code. This appear menu/combobox button. And modify values
+1) Write this menu code. This appear menu/combobox button. And modify values
   * `data-id` : id for root menu.
   * `data-selectedValue` : selected value(default value) on items values
   * `data-width` : force width. (Optional)
@@ -25,10 +25,9 @@ Therefore You can use this component to form on your site. Or Use navigating wit
 	<span class="label"></span>
 	<span class="arrow"></span>
 </a>
-
 ```
 
-2. Make menu content list
+2) Make menu content list
   * `data-id` : id
   * `data-role` : type of menu
       * `root` : root menu
