@@ -73,3 +73,12 @@ This value is changed by selecting menu.
 <input type="text" name="one" value="11" style="display:none" data-role="jUI_menu">
 ```
 
+## CAHNGE STYLE
+Modify css file. all style is in this file. :)
+
+## CONTACT
+If you have any question,
+
+* milk@mintcode.org
+* www.mintcode.org
+
