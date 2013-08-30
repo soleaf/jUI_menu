@@ -13,10 +13,29 @@
 		font-size:12px;
 		list-style: none;
 	}
+
+	h1{font-size:20px;}
+	h2{font-size:16px;}
+
+	.article {
+		margin-top:10px; margin-bottom: 10px;
+	}
 	</style>
 </head>
 <body>
 
+	<h1>jUI_menu Example</h1>
+	<div class="article">
+	jUI_menu is a easy beautibul Javascript tool for combobox and menu have input value.</br> Therefore You can use this component to form on your site. Or Use navigating with submenu!
+	</div>
+
+	<div class="article">
+	<h2>Use simple!</h2>
+	Only code need anchor(location for combobox or menu) and menu contents list.<br/>
+	Menu content list link to root menu(data-root on menu->data-id on root). submenu link by menu's data-sub.<br/>
+	See this page source code.<br/>
+	(! You should see this code wighout rendering, Open file with editor(Not webbrowser's source viewer))
+	</div>
 
 	<a href="#" class="jUI_menu" data-id="one" data-selectedValue="11" data-width="170">
 			<span class="label"></span>
@@ -28,22 +47,21 @@
 			<span class="arrow"></span>
 	</a>
 	
-	<!-- jUI menuList: BEGIN -->
+	<!-- jUI menu content list: BEGIN -->
 		<ul class="jUI_memu_layer" data-role="root" data-id="one" data-root="one">
 			<li data-value="">ALL</li>
 			<li data-value="11">1</li>
 			<li data-value="S100" data-sub="sub1">11</li>
 			<li data-value="S200" data-sub="sub2">222</li>
-		</ul>
-
-		<ul class="jUI_memu_layer" data-role="sub" data-id="sub1" data-root="one">																<li data-value="3">A123LL</li>
-			<li data-value="31">1</li>
-		</ul>
-		
-		<ul class="jUI_memu_layer" data-role="sub" data-id="sub2" data-root="one">
-			<li data-value="3">A123LL</li>
-			<li data-value="31">1</li>
-		</ul>
+		</ul>			
+			<ul class="jUI_memu_layer" data-role="sub" data-id="sub1" data-root="one">											<li data-value="3">A123LL</li>
+				<li data-value="31">1</li>
+			</ul>
+			
+			<ul class="jUI_memu_layer" data-role="sub" data-id="sub2" data-root="one">
+				<li data-value="3">A123LL</li>
+				<li data-value="31">1</li>
+			</ul>
 		
 		<ul class="jUI_memu_layer" data-role="root" data-id="two" data-root="two">
 			<li data-value="">ALL</li>
@@ -53,5 +71,11 @@
 		</ul>
 	<!-- jUI menuList: End -->
 		
+	<div class="article">
+	<h2>Form data</h2>
+	Only You write down anchor and ul tag, jUI_menu make automaticaly input tag in anchor tag location for form data!<br/>
+	Check source of this page.<br/>
+	(See webbrowser's source viewer with rendering)
+	</div>
 </body>
 </html>

@@ -7,7 +7,7 @@ http://www.mintcode.org
 GitHub : https://github.com/soleaf/jUI_menu
 */
 
-/* 메뉴레이어 */
+/* Menu Layer */
 .jUI_memu_layer{
 	display: none;
 	background-color: #FFFFFF;
@@ -16,11 +16,9 @@ GitHub : https://github.com/soleaf/jUI_menu
 	border: 2px solid #6A679A;
 	cursor:pointer;
 	
--moz-box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
--webkit-box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
-box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
-
-
+	-moz-box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
+	-webkit-box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
+	box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
 }
 
 .jUI_memu_layer LI{
@@ -50,9 +48,16 @@ box-shadow:0px 9px 23px 0px rgba(119, 119, 119, 0.8);
 
 .jUI_menu{
 	display: inline-block;
+	border: 2px solid #DEDEDE;
+	position:relative;
+}
+
+.jUI_menu:HOVER{
+	display: inline-block;
 	border: 2px solid #6A679A;
 	position:relative;
 }
+
 
 .jUI_menu .label
 {
