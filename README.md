@@ -63,9 +63,11 @@ Therefore You can use this component to form on your site. Or Use navigating wit
 3. That's all!
 
 ## USE INPUT FOR FORM
-If you use jUI_menu, You see autugenerated input tag in menu through `web browser source viewer(rendered)`
-This is rendered code. See input. you cant use it for form and post/get action and other.
+If you use jUI_menu, You cant see `autugenerated input tag` in menu through `web browser source viewer(rendered)`
+This is rendered code. See input. you can use it for form and post/get action and other.
 This value is changed by selecting menu.
+
+Just do Nothing :) It's Automating!
 
  * name is matched by `data-id`
  
